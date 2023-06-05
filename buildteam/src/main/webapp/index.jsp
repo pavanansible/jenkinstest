@@ -1,8 +1,23 @@
 <html>
-<body>
-<h2>Hello World!</h2>
-<h1>This is Pavan from Build Team</h1>
-<blink> <h3>This is Pavan from Jenkins Team</h3> <blink>
-<h1>This is Pavan from Build Team</h1>
-</body>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      #blink {
+        font-size: 30px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: #1c87c9;
+        transition: 0.4s;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="blink">Blinking Effect with JavaScript</p>
+    <script type="text/javascript">
+      var blink = document.getElementById('blink');
+      setInterval(function() {
+        blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+      }, 1000);
+    </script>
+  </body>
 </html>
